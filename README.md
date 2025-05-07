@@ -18,14 +18,12 @@ It also includes:
 ## 📦 Repository Structure
 
 ```
-.
-├── weighted_random_sampling/
-│   ├── base.py                # Abstract interface `RandomGen`
-│   ├── alias.py               # AliasRandomGen implementation
-│   ├── cdf.py                 # CDFRandomGen implementation
-│   ├── exponential.py         # ExponentialRandomGen implementation
-│   ├── lookup.py              # LookupRandomGen implementation
-│
+weighted_random_sampling.py
+│   ├── RandomGen              # Abstract interface `RandomGen`
+│   ├── AliasRandomGen         # Alias method implementation
+│   ├── CDFRandomGen           # CDF method implementation
+│   ├── ExponentialRandomGen   # ExponentialRandomGen implementation
+│   ├── LookupRandomGen        # Lookup table implementation
 ├── profiler.py                # Script to measure time & memory, and plot results
 ├── test.py                # Script to test all implementations
 ├── demo.ipynb                 # Interactive notebook to test all methods
